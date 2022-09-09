@@ -21,7 +21,3 @@ for (var i = 0; i < textOverImages.length; i++) {
     }
   }
 }
-
-function stopPropagation(event){
-  event.stopPropagation();
-}
