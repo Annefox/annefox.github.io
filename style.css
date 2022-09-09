@@ -1,0 +1,301 @@
+/* 
+  css da pagina principal - Annelise 2022
+*/
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+h1{
+  text-align: center;
+  color: white;
+   font-size: 24px;
+  padding: 20px 0;
+}
+
+.principal {
+  background: -webkit-gradient(linear, left top, right top, from(#4de1ff), to(#f41597)) no-repeat;
+  padding: 80px;
+}
+.principal p{
+  padding: 10px 0;
+}
+#imae {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  border-radius:50%;
+  border: 6px solid #d538f5;
+}
+.nue{
+  display: inline-block;
+  vertical-aling: top
+  font-size: 20px;
+  padding: 15px 0;
+}
+
+body {
+  background: -webkit-gradient(linear, left top, right top, from(#f41597), to(#4de1ff)) no-repeat;
+
+}
+.principal {
+  background: -webkit-gradient(linear, left top, right top, from(#4de1ff), to(#f41597)) no-repeat;
+}
+.emaila {
+  width: 2%
+}
+
+
+.ao{
+  background: -webkit-gradient(linear, left top, right top, from(#f41597), to(#4de1ff)) no-repeat;
+  padding: 10px 0;
+}
+.ao h2{
+  font-size: 20px;
+  color: ##7d04a9; 
+  font-weight: bold;
+}
+
+#header {
+  background: #4de1ff;
+  text-align: center;
+  vertical-aling: top;
+  position: fixed;
+  top: 0%; 
+  width: 100%;
+  margin: auto;
+}
+#header h2{
+  padding: 20px 0;
+}
+
+.itens {
+  padding: 70px 20px;
+  font-style: italic;
+}
+#btn-mobile{
+  display: none;
+}
+
+@media (max-width:480px){
+  .principal{
+    padding: 0;
+  }
+  h1{
+    text-align: initial;
+    font-size: 22px;
+    padding: 20px 0;
+  }
+  #header{
+  position: fixed;
+  right: 0;
+  top: 0%;
+  width: 10em;
+  margin-top: -1em;
+  }
+  #header p{
+    text-align: center;
+    font-size: 14px; 
+  }
+  .itens{
+    display: block;
+    padding: 7px 0;
+  }
+  #menu {
+    display: block;
+    position: absolute;
+    width:100%;
+    top: 100px;
+    right: 0px;
+    background: #e7e7e7;
+    transition: 0.6s;
+    z-index: 1000;
+    height: 0px;
+    visibility: hidden;
+    overflow-y: hidden;
+  }
+  #nav.active #menu {
+    height: calc(15vh - 30px);
+    visibility: visible;
+    overflow-y: auto;
+  } 
+  #menu a {
+    padding: 1rem 0;
+    margin: 0 1rem;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+  }
+  #btn-mobile {
+    display: flex;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+    gap: 0.5rem;
+  }
+  #hamburger {
+    border-top: 2px solid;
+    width: 20px;
+  }
+  #hamburger::after,
+  #hamburger::before {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: currentColor;
+    margin-top: 5px;
+    transition: 0.3s;
+    position: relative;
+  }
+  #nav.active #hamburger {
+    border-top-color: transparent;
+  }
+  #nav.active #hamburger::before {
+    transform: rotate(135deg);
+  }
+  #nav.active #hamburger::after {
+    transform: rotate(-135deg);
+    top: -7px;
+  }
+}
+
+.txt{
+  background: #4de1ff;
+  padding:10px;
+}
+.txt h2{
+  text-align: center;
+}
+.imagemsobre{
+  width: 60%;
+}
+.formac h2{
+  padding: 10px 0;
+}
+.sobre h2{
+  padding: 20px 0;
+}
+.conteudo{
+  display: flex;
+  align-items: center;
+  width: 960px;
+  margin: auto;
+}
+.conteudo img {
+    width: 30%;
+}
+.conteudo p{
+ margin-left: 120px;
+    width: 300px;
+    font-size: 17px; 
+}
+
+.forma {
+  width: 940px;
+  margin: 0 auto;
+  padding: 10px 0;
+}
+.forma li{
+  text-align: center;
+  width: 100%;
+  vertical-align: top;
+  marging: 1.5% 0;
+  padding: 25px 20px;
+  box-sizing: border-box;
+  border-color:#a029db;
+  border-width: 1px;
+  border-style: solid;
+}
+.medio{
+  padding: 25px 0;
+}
+
+
+.onClickTextOverImage{
+  width:300px;
+  height:200px;
+  background-size:cover;
+  display:inline-block;
+  padding: 0 10px;
+
+  border-radius:16px;
+  margin:4px;
+  box-shadow:0 0 16px rgba(0,0,0,0.5);
+  cursor:pointer;
+  position:relative;
+}
+.inte{
+  text-align:center;
+}
+.inte h2{
+  padding: 10px;
+}
+.onClickTextOverImage div{
+  position:absolute;
+  color:#fff;
+  font-size: 20px;
+  padding:8px;
+  top:0;
+  bottom:0;
+  right:0;
+  left:0;
+  background-color:rgba(0,0,0,0.5);
+  border-radius:16px;
+  padding-top:40%;
+  text-align:center;
+  opacity: 0;
+  transition:.3s;
+}
+
+.onClickTextOverImage div:hover{
+  opacity:1;
+  padding-top:40%;
+  visibility: visible;
+}
+
+nav{
+  display: inline;
+  text-decoration: none;
+}
+nav li {
+  display: inline;
+  margin: 0 0 0 30px;
+  text-align: center;
+  
+}
+nav a{
+   text-decoration: none;
+  font-size: 20px;
+  color: #000000;
+}
+nav a:hover {
+  color: #ff33b4;
+  text-decoration: underline;
+}
+footer {
+  background: -webkit-gradient(linear, left top, right top, from(#f41597), to(#4de1ff)) no-repeat;
+  text-align: center;
+  color: #000000;
+  font-size: 14px;
+  padding: 30px 0;
+}
+
+@media screen and (max-width: 480px) {
+  .menu , .itens, .forma, .conteudo, .nue{
+    width: auto;
+  }
+  .eimala{
+     width: 5%;
+  }
+  .conteudo im{
+    width: 100%;
+    margin: auto;
+  }
+  .conteudo p{
+    margin-left: 20px;
+  }
+  body{
+    background: -webkit-gradient(linear, left top, right top, from(#4de1ff), to(#f41597)) no-repeat;
+  }
+}
